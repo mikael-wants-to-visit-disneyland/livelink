@@ -6,6 +6,7 @@
 
 .profile-picture {
   width: 55px;
+  min-width: 55px;
   height: 55px;
   position: relative;
   overflow: hidden;
