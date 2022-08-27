@@ -6,7 +6,6 @@ import UserCard, { IUserCardProps } from "./components/UserCard";
 
 function App() {
   const [activeCard, setActiveCard] = React.useState<number | null>(null);
-  console.log(activeCard);
   return (
     <div
       style={{
@@ -22,15 +21,15 @@ function App() {
     >
       <img src={logo} className="logo" alt="logo" />
       <div style={{ display: "flex", flexDirection: "column", width: "77%" }}>
-        {activeCard === null ? (
-          cardDetails.map((details, i) => (
-            <div key={i} onClick={() => setActiveCard(i)}>
-              <UserCard {...details} />
-            </div>
-          ))
-        ) : (
-          <UserCard {...cardDetails[activeCard]} expanded />
-        )}
+        {cardDetails.map((details, i) => (
+          <div key={i} onClick={() => setActiveCard(i)}>
+            <UserCard
+              {...details}
+              expanded={activeCard === i}
+              hidden={activeCard !== null && activeCard !== i}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

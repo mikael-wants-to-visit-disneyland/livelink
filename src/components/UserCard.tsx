@@ -1,36 +1,25 @@
+import { ReactNode } from "react";
+import "./UserCard.css";
+
 export interface IUserCardProps {
   name: string;
   summary: string;
   description: string;
   imgUrl: string;
   expanded?: boolean;
+  hidden?: boolean;
 }
 
 function UserCard(props: IUserCardProps) {
   return (
-    <div
-      style={{
-        background: "white",
-        marginBottom: "15px",
-        borderRadius: "8px",
-        border: "2px solid grey",
-        padding: "10px",
-      }}
-    >
+    <div className={`usercard ${props.hidden && "usercard-hidden"}`}>
       <div
         style={{
           display: "flex",
         }}
       >
         <div className="profile-picture">
-          <img
-            src={props.imgUrl}
-            style={{
-              height: "100%",
-              width: "auto",
-            }}
-            alt="logo"
-          />
+          {<img src={props.imgUrl} style={{ height: "100%", width: "auto" }} />}
         </div>
         <div
           style={{
