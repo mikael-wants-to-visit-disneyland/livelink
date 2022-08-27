@@ -8,4 +8,4 @@ To try this, simply do `npm start`
 
 ## Data
 
-You can modify the cards contents contents in `src/dummyData.json`
+You can modify the cards contents in `src/dummyData.json`
