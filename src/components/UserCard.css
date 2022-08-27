@@ -4,10 +4,10 @@
   border-radius: 8px;
   border: 2px solid grey;
   padding: 10px;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .usercard-hidden {
-  opacity: 0;
-  transition: 0.3s ease-in;
+  opacity: 0.4;
+  transition: 0.2s ease-in;
 }
