@@ -1,17 +1,18 @@
-.logo {
+.creator-browsing-view-logo {
   height: 50px;
   pointer-events: none;
 }
 
-.usercard-view {
+.creator-browsing-view {
   width: 100vw;
   height: fit-content;
   min-height: 100vh;
   align-items: center;
   background: #fdefe6;
+  color: black;
 }
 
-.usercard-list {
+.creator-browsing-view-list {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@
   overflow: scroll;
 }
 
-.header {
+.creator-browsing-view-header {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
@@ -28,14 +29,4 @@
   top: 0;
   background: #fdefe6;
   z-index: 100;
-}
-
-.profile-picture {
-  width: 55px;
-  min-width: 55px;
-  height: 55px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 100%;
-  border: 1px solid #c2c2c2;
 }

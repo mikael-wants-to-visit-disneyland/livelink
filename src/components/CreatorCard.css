@@ -1,0 +1,49 @@
+.creatorcard {
+  background: white;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 2px solid grey;
+  padding: 10px;
+  transition: 0.2s ease-in;
+}
+
+.creatorcard-faded {
+  opacity: 0.4;
+  transition: 0.2s ease-in;
+}
+
+.creatorcard-content {
+  display: flex;
+}
+
+.creatorcard-text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 16px;
+}
+
+.creatorcard-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.creatorcard-summary {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.creatorcard-description {
+  font-size: 12.5px;
+  margin-top: 15px;
+}
+
+.creator-browsing-view-profile-picture {
+  width: 55px;
+  min-width: 55px;
+  height: 55px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 1px solid #c2c2c2;
+}
